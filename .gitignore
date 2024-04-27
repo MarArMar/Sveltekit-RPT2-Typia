@@ -1,0 +1,99 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# Misc
+.DS_Store
+*.pem
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE
+.idea/
+
+# KDE/Linux generated files
+.directory
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+*.eslintcache
+
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Testing
+coverage/
+coverage.json
+
+# Turbo
+.turbo/
+
+# Build folders
+build/
+dist/
+dist-ssr/
+.svelte-kit/
+.svelte/
+.netlify/
+.vercel/
+.vercel_build_output/
+.next/
+out/
+package/
+.yarn/
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Log files
+*.log
+
+# Env files
+.env
+.env.*
+!.env.example
+!.env.*.example
+!/.env
+secret.json
+secrets.json
+
+# Vite configs
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# Storybook files
+storybook-static
+
+# Playwright results
+**/test-results/
+
+# Cypress files
+**/cypress/screenshots/
+**/cypress/videos/
+
+# Pocketbase files
+**/backend/**/pb_data/
+**/backend/**/pb_migrations/
+**/backend/**/pocketbase.exe
+**/backend/**/pocketbase
+
+# Sentry Config File
+.sentryclirc
+
+# Ignored folders
+**/_/**/*
+
+# Lint reports
+**/lint.txt
+
+# nyc test coverage
+.nyc_output
