@@ -24,10 +24,13 @@ export const rollup_typescript_config = {
   tsconfig: 'tsconfig.json', // To throw error if no local tsconfig.json found
   include: include_list, // Mandatory to import TS modules from the monorepo
   exclude: exclude_list, // To ensure good perf
+  // verbosity: 3,
 }
 
 export default defineConfig({
   esbuild: false,
+  // From https://typia.io/docs/setup/#vite
+  // Tested in reverse order, same problem
   plugins: [typescript(rollup_typescript_config), sveltekit()],
   build: {
     commonjsOptions: {
